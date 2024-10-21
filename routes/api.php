@@ -13,4 +13,4 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 Route::get('/scrape-forebet', [ScraperController::class, 'scrapeForebet']);
 Route::get('/analyze-matches', [MatchAggregatorController::class, 'getCommonMatchesJson']);
-Route::get('/scrape-forebet', [ForebetScraperController::class, 'scrape']);
+// Route::get('/scrape-forebet', [ForebetScraperController::class, 'scrape']);

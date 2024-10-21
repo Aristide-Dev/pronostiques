@@ -15,4 +15,9 @@ class ScraperService
             'timeout' => 60,
         ]));
     }
+
+    protected function formatTime($time)
+    {
+        return str_replace(':', 'h:', $time);
+    }
 }

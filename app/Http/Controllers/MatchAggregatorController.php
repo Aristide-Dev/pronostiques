@@ -17,6 +17,7 @@ class MatchAggregatorController extends Controller
     public function showCommonMatches()
     {
         $analyzedMatches = $this->aggregatorService->aggregateMatches();
+        dd($analyzedMatches);
         return view('matches', ['analyzedMatches' => $analyzedMatches]);
     }
 
